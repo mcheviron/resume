@@ -1,0 +1,50 @@
+[
+  {
+    "title": "snippets",
+    "description": "A Go webservice for posting, saving and viewing snippets",
+    "tags": ["golang", "mysql"],
+    "url": "https://github.com/mcheviron/snippets"
+  },
+  {
+    "title": "e-clothing",
+    "description": "Pure react e-commerce app",
+    "tags": ["javascript", "firebase", "react", "redux", "react-router"],
+    "url": "https://github.com/mcheviron/e-clothing"
+  },
+  {
+    "title": "ilovecoffee",
+    "description": "A RESTful API created via Nest.js",
+    "tags": ["typescript", "nestjs", "postgres", "docker"],
+    "url": "https://github.com/mcheviron/ilovecoffee"
+  },
+  {
+    "title": "nextspace",
+    "description": "A MySpace clone via Next.js app router",
+    "tags": ["typescript", "nextjs"],
+    "url": "https://github.com/mcheviron/nextspace"
+  },
+  {
+    "title": "tasks",
+    "description": "A fullstack Next.js 13 app router task manager app",
+    "tags": ["typescript", "nextjs", "tailwindcss", "prisma"],
+    "url": "https://github.com/mcheviron/tasks"
+  },
+  {
+    "title": "mailinglist",
+    "description": "A JSON and gRPC microservice for creating a mailing list",
+    "tags": ["golang", "grpc", "json"],
+    "url": "https://github.com/mcheviron/mailinglist"
+  },
+  {
+    "title": "password checker",
+    "description": "A python async password checker",
+    "tags": ["python", "asyncio", "typer"],
+    "url": "https://github.com/mcheviron/pass_checker"
+  },
+  {
+    "title": "netcat",
+    "description": "A netcat tool to aid with getting a shell on compromised machines",
+    "tags": ["python", "networking", "cybersecurity"],
+    "url": "https://github.com/mcheviron/pass_checker"
+  }
+]
