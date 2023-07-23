@@ -2,7 +2,6 @@
   import home from "$lib/assets/home.jpg";
 </script>
 
-
 <div class="wrapper">
   <div class="left-col">
     <h1>Technophile, engineer, developer.</h1>
@@ -17,12 +16,13 @@
 <style>
   .wrapper {
     display: flex;
-    gap: 15.3125rem;
+    gap: 200px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
   .left-col {
     display: flex;
     flex-direction: column;
-    padding-left: 1.875rem;
   }
   h1 {
     font-size: 2.5rem;
