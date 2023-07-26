@@ -6,13 +6,15 @@
   $: isActive = (url: string) => url === $page.url.pathname;
 </script>
 
-<nav class="flex items-center gap-16 mb-14">
+<nav class="flex items-center mx-3.5 gap-16 mb-14 md:mx-10 lg:max-w-6xl">
   <a
     href="/"
-    class="mr-auto font-['Playfair_Display'] text-3xl"
-    class:active={isActive("/")}>Mostafa Cheviron</a
+    class="md:mr-auto font-['Playfair_Display'] text-3xl"
+    class:active={isActive("/")}
   >
-  <ul class="flex gap-16 justify-end items-center">
+    Mostafa Cheviron
+  </a>
+  <ul class="md:flex gap-16 justify-end items-center hidden">
     <li>
       <a class="text-lg" href="/about" class:active={isActive("/about")}
         >About</a
@@ -25,11 +27,11 @@
     </li>
     <li>
       <a class="text-lg" href="/projects" class:active={isActive("/projects")}
-        >Projects</a
-      >
+        >Projects
+      </a>
     </li>
   </ul>
-  <div class="relative flex items-center justify-center w-14 h-14">
+  <div class="hidden relative lg:flex items-center justify-center w-14 h-14">
     <svg
       class="absolute top-0 left-0 animate-spin-slow hover:animate-spin-reverse"
       height="56"

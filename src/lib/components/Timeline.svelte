@@ -5,7 +5,7 @@
       <div
         class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
       >
-        <h3 class="font-semibold text-lg mb-1">Graduated as an engineer</h3>
+        <h3 class="font-semibold md:text-lg mb-1">Graduated as an engineer</h3>
       </div>
       <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
         <div class="h-full w-6 flex items-center justify-center">
@@ -39,7 +39,7 @@
       <div
         class="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
       >
-        <h3 class="font-semibold text-lg mb-1">
+        <h3 class="font-semibold md:text-lg mb-1">
           Started working at Microsoft as a technology consultant
         </h3>
       </div>
@@ -49,7 +49,7 @@
       <div
         class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
       >
-        <h3 class="font-semibold text-lg mb-1">
+        <h3 class="font-semibold md:text-lg mb-1">
           Became part of the Windows Server team
         </h3>
       </div>
@@ -71,7 +71,7 @@
       <div
         class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
       >
-        <h3 class="font-semibold text-lg mb-1">
+        <h3 class="font-semibold md:text-lg mb-1">
           Became the technical leader for the Windows networking and active
           directory teams
         </h3>
@@ -106,7 +106,7 @@
       <div
         class="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
       >
-        <h3 class="font-semibold text-lg mb-1">
+        <h3 class="font-semibold md:text-lg mb-1">
           Arrived in France and became a fulltime husband and discovered my
           passion for code
         </h3>

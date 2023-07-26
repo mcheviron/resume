@@ -2,8 +2,10 @@
   import home from "$lib/assets/home.jpg";
 </script>
 
-<div class="flex gap-80 px-8">
-  <div class="flex flex-col w-2/5 space-y-40">
+<div
+  class="flex flex-col justify-center items-center md:flex-row md:items-start md:justify-center md:gap-80 md:p-14"
+>
+  <div class="flex flex-col md:w-2/5 md:gap-40">
     <h1 class="text-4xl font-normal mb-32 w-80">
       Technophile, engineer, developer.
     </h1>
@@ -22,13 +24,20 @@
           Skills
         </div>
       </a>
+      <a href="/projects" class="no-underline text-inherit w-44 h-16 md:hidden">
+        <div
+          class="inline-flex items-center justify-center bg-[#1f2028] text-white py-7 px-12 text-lg cursor-pointer rounded-full border-2 border-solid border-gray-600 w-44 h-16 transition duration-300 hover:border-2 hover:border-solid hover:border-[#1f2028]"
+        >
+          Projects
+        </div>
+      </a>
     </div>
   </div>
-  <div>
+  <div class="">
     <img
       src={home}
       alt="monitors with code"
-      class="object-cover h-[37.5rem] w-full rounded-md transition ease-out duration-300 hover:scale-105"
+      class="hidden object-cover h-[37.5rem] w-full rounded-md transition ease-out duration-300 hover:scale-105 lg:block"
     />
   </div>
 </div>

@@ -8,7 +8,7 @@
 </script>
 
 <div
-  class="flex flex-col max-w-xs p-5 gap-4 bg-white text-black rounded-md transition duration-300 ease-out hover:scale-110"
+  class="flex flex-col max-w-xs p-5 gap-4 bg-white text-black rounded-md transition duration-300 ease-out lg:hover:scale-110"
 >
   <h2 class="text-2xl font-bold">{title}</h2>
   <p class="text-sm font-light">{description}</p>

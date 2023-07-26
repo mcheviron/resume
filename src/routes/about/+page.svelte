@@ -3,14 +3,14 @@
   import Timeline from "$lib/components/Timeline.svelte";
 </script>
 
-<div class="flex p-12 gap-60">
-  <div class="w-1/2">
-    <h1 class="text-4xl font-normal">
+<div class="flex p-12 lg:gap-60">
+  <div class="lg:w-1/2">
+    <h1 class="md:text-4xl font-normal text-start">
       Hi, I'm Mostafa Elataby-Cheviron, I'm a software engineer and a fullstack
       developer. I love technology in all its forms and the general sciences. I
       don’t care if it’s OS internals or UI/UX design.
     </h1>
-    <h2 class="text-4xl font-normal text-gray-400 mt-4">
+    <h2 class="md:text-4xl font-normal text-gray-400 mt-4 text-start">
       Knowledge shouldn’t have gate keepers.
     </h2>
     <div class="mt-24 flex gap-7 items-center">
@@ -18,8 +18,7 @@
         class="flex items-center justify-center border-[0.065rem] border-solid border-[#9e9e9e] w-11 h-11 rounded-full animate-bounce"
       >
         <svg
-          width="21"
-          height="24"
+          class="w-4 h-4 md:w-6 md:h-6"
           viewBox="0 0 21 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,10 +29,10 @@
           />
         </svg>
       </div>
-      <p class="text-2xl">Know more about me</p>
+      <p class="md:text-2xl">Know more about me</p>
     </div>
   </div>
-  <div class="right-col">
+  <div class="hidden lg:block">
     <img
       src={knowledge}
       alt="knwoledge"
@@ -41,15 +40,19 @@
     />
   </div>
 </div>
-<Timeline />
-<h2 class="flex items-center justify-center text-4xl font-normal mt-16">
+<div class="flex justify-center items-center">
+  <Timeline />
+</div>
+<h2
+  class="flex items-center justify-center text-lg md:text-4xl font-normal mt-16 mb-10 md:mb-0"
+>
   Code
 </h2>
-<div class="flex flex-col gap-3 my-48 mx-0">
+<div class="hidden md:flex flex-col gap-3 my-48 mx-9 lg:mx-0">
   <p class="text-4xl font-normal w-[47rem]">
     Other interests that have nothing to do with business:
   </p>
-  <ul>
+  <ul class="m-10">
     <li>I was a swimming champion and played it for over 15 years</li>
     <li>I was a fencer as well but played it much less than swimming</li>
     <li>I am an avid reader, especially non-fiction, history and philosophy</li>

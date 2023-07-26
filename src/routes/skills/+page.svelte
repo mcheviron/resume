@@ -2,8 +2,10 @@
   import Icon from "@iconify/svelte";
 </script>
 
-<div class="flex flex-col items-center p-32">
-  <h1 class="text-4xl font-normal items-center mb-28 text-center">
+<div class="flex flex-col items-center p-14 lg:p-32">
+  <h1
+    class="hidden md:block text-4xl font-normal items-center mb-28 text-center"
+  >
     I program in several languages, with different proficiencies. Ultimately, I
     don’t focus on the specific language too much and prefer to focus mainly on
     the implementation and language support. Not all languages are the same and
@@ -11,7 +13,7 @@
     frontend, I wouldn’t use Rust.
   </h1>
   <div
-    class="flex items-center justify-center border-[0.065rem] border-solid border-[#9e9e9e] w-11 h-11 rounded-full mb-28 animate-bounce"
+    class="hidden md:flex items-center justify-center border-[0.065rem] border-solid border-[#9e9e9e] w-11 h-11 rounded-full mb-28 animate-bounce"
   >
     <svg
       width="21"
@@ -27,7 +29,7 @@
     </svg>
   </div>
   <div class="flex flex-col gap-24">
-    <h2 class="text-3xl font-bold text-center">
+    <h2 class="hidden md:block text-3xl font-bold text-center">
       The following tier list isn’t intended to reflect my objective knowledge
       of the languages, tools and frameworks, but how fast and how much I
       develop in them
