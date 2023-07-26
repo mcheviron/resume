@@ -2,87 +2,33 @@
   import home from "$lib/assets/home.jpg";
 </script>
 
-<div class="wrapper">
-  <div class="left-col">
-    <h1>Technophile, engineer, developer.</h1>
-    <a href="/about"><div class="about">About me</div></a>
-    <a href="/skills"><div class="skills">Skills</div></a>
+<div class="flex gap-80 px-8">
+  <div class="flex flex-col w-2/5 space-y-40">
+    <h1 class="text-4xl font-normal mb-32 w-80">
+      Technophile, engineer, developer.
+    </h1>
+    <div class="flex flex-col space-y-6">
+      <a href="/about" class="no-underline text-inherit w-44 h-16">
+        <div
+          class="hover:text-gray-600 inline-flex items-center justify-center bg-white text-black py-7 px-12 text-lg cursor-pointer rounded-full w-44 h-16"
+        >
+          About me
+        </div>
+      </a>
+      <a href="/skills" class="no-underline text-inherit w-44 h-16">
+        <div
+          class="inline-flex items-center justify-center bg-[#1f2028] text-white py-7 px-12 text-lg cursor-pointer rounded-full border-2 border-solid border-gray-600 w-44 h-16 transition duration-300 hover:border-2 hover:border-solid hover:border-[#1f2028]"
+        >
+          Skills
+        </div>
+      </a>
+    </div>
   </div>
-  <div class="right-col">
-    <img src={home} alt="monitors with code" />
+  <div>
+    <img
+      src={home}
+      alt="monitors with code"
+      class="object-cover h-[37.5rem] w-full rounded-md transition ease-out duration-300 hover:scale-105"
+    />
   </div>
 </div>
-
-<style>
-  .wrapper {
-    display: flex;
-    gap: 200px;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
-  }
-  .left-col {
-    display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-bottom: 8.125rem;
-    width: 22.5rem;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-    width: 10.9375rem;
-    margin-bottom: 1.875rem;
-    height: 4.6875rem;
-  }
-  .about {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    color: black;
-    border-radius: 3.125rem;
-    padding: 1.625rem 3rem;
-    font-size: 1.125rem;
-    cursor: pointer;
-  }
-  .about:hover {
-    font-weight: bold;
-  }
-  .skills {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1f2028;
-    border: 2px solid #9e9e9e;
-    border-radius: 3.125rem;
-    padding: 1.625rem 3rem;
-    width: 10.9375rem;
-    height: 4.6875rem;
-    font-size: 1.125rem;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .skills:hover {
-    border: 2px solid #1f2028;
-  }
-
-  .left-col {
-    width: 50%;
-  }
-
-  img {
-    object-fit: cover;
-    height: 37.5rem;
-    width: 100%;
-    border-radius: 0.3125rem;
-    transition: 0.3s;
-    transform: scale(1);
-  }
-  img:hover {
-    transform: scale(1.05);
-  }
-</style>

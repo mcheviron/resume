@@ -3,18 +3,8 @@
   import projects from "$lib/assets/projects.json";
 </script>
 
-<div class="cards">
+<div class="grid grid-cols-3 place-content-center gap-7 my-8">
   {#each projects as project}
     <Card {...project} />
   {/each}
 </div>
-
-<style>
-  .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.875rem;
-  }
-</style>

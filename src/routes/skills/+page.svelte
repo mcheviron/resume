@@ -2,15 +2,17 @@
   import Icon from "@iconify/svelte";
 </script>
 
-<div class="wrapper">
-  <h1>
+<div class="flex flex-col items-center p-32">
+  <h1 class="text-4xl font-normal items-center mb-28 text-center">
     I program in several languages, with different proficiencies. Ultimately, I
     don’t focus on the specific language too much and prefer to focus mainly on
     the implementation and language support. Not all languages are the same and
     if I am writing an OS, I wouldn’t use Typescript and if I am creating a
     frontend, I wouldn’t use Rust.
   </h1>
-  <div class="button">
+  <div
+    class="flex items-center justify-center border-[0.065rem] border-solid border-[#9e9e9e] w-11 h-11 rounded-full mb-28 animate-bounce"
+  >
     <svg
       width="21"
       height="24"
@@ -24,255 +26,259 @@
       />
     </svg>
   </div>
-  <div class="lower-sec">
-    <h2>
+  <div class="flex flex-col gap-24">
+    <h2 class="text-3xl font-bold text-center">
       The following tier list isn’t intended to reflect my objective knowledge
       of the languages, tools and frameworks, but how fast and how much I
       develop in them
     </h2>
     <div class="high">
       <p>High:</p>
-      <div class="skills">
-        <Icon
-          class="icon"
-          icon="teenyicons:javascript-outline"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="fa6-brands:golang"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="akar-icons:html-fill"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="akar-icons:css-fill"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="teenyicons:react-outline"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="teenyicons:nextjs-solid"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="teenyicons:nodejs-solid"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="teenyicons:python-outline"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="akar-icons:vscode-fill"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="simple-icons:linux"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="bi:windows"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon class="icon" icon="bi:git" color="white" width="61" height="61" />
-        <Icon
-          class="icon"
-          icon="bi:github"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="file-icons:tailwind"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="teenyicons:typescript-outline"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="file-icons:svelte"
-          color="white"
-          width="61"
-          height="61"
-        />
+      <div class="flex justify-center items-center flex-wrap gap-16">
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:javascript-outline"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="fa6-brands:golang"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="akar-icons:html-fill"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="akar-icons:css-fill"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:react-outline"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:nextjs-solid"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:nodejs-solid"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:python-outline"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="akar-icons:vscode-fill"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="simple-icons:linux"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="bi:windows"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="bi:git"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="bi:github"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="file-icons:tailwind"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:typescript-outline"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="file-icons:svelte"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
       </div>
     </div>
     <div class="medium">
       <p>Medium:</p>
-      <div class="skills">
-        <Icon
-          class="icon"
-          icon="fa6-brands:docker"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="mingcute:figma-line"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="file-icons:nestjs"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="simple-icons:csharp"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="devicon-plain:java"
-          color="white"
-          width="61"
-          height="61"
-        />
+      <div class="flex justify-center items-center flex-wrap gap-16">
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="fa6-brands:docker"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="mingcute:figma-line"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="file-icons:nestjs"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="simple-icons:csharp"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="devicon-plain:java"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
       </div>
     </div>
     <div class="low">
       <p>Low:</p>
-      <div class="skills">
-        <Icon
-          class="icon"
-          icon="cib:rust"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="simple-icons:zig"
-          color="white"
-          width="61"
-          height="61"
-        />
-        <Icon
-          class="icon"
-          icon="teenyicons:c-solid"
-          color="white"
-          width="61"
-          height="61"
-        />
+      <div class="flex justify-center items-center flex-wrap gap-16">
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="cib:rust"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="simple-icons:zig"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
+        <div class="icon">
+          <Icon
+            class="icon"
+            icon="teenyicons:c-solid"
+            color="white"
+            width="61"
+            height="61"
+          />
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8.125rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 7.5rem;
-  }
-  .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.0625rem solid #9e9e9e;
-    width: 44px;
-    height: 44px;
-    margin-bottom: 7.5rem;
-    border-radius: 50%;
-    animation: upDown 0.5s ease-in-out infinite alternate;
-  }
-  @keyframes upDown {
-    0% {
-      transform: translateY(-0.3125rem);
-    }
-    100% {
-      transform: translateY(0.3125rem);
-    }
-  }
-  h2 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4rem;
-  }
-
   p {
     font-size: 1.5625rem;
     width: 100%;
     text-align: center;
     margin-bottom: 3.125rem;
   }
-  .lower-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 6.25rem;
-  }
-  :global(.icon) {
+  .icon {
     transition: 0.3s;
     transform: scale(1);
   }
 
-  :global(.icon:hover) {
+  .icon:hover {
     transform: scale(1.2);
   }
 </style>

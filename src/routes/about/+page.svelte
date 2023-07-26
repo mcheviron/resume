@@ -3,16 +3,20 @@
   import Timeline from "$lib/components/Timeline.svelte";
 </script>
 
-<div class="wrapper">
-  <div class="left-col">
-    <h1>
+<div class="flex p-12 gap-60">
+  <div class="w-1/2">
+    <h1 class="text-4xl font-normal">
       Hi, I'm Mostafa Elataby-Cheviron, I'm a software engineer and a fullstack
       developer. I love technology in all its forms and the general sciences. I
       don’t care if it’s OS internals or UI/UX design.
     </h1>
-    <h2>Knowledge shouldn’t have gate keepers.</h2>
-    <div class="scroll-down">
-      <div class="button">
+    <h2 class="text-4xl font-normal text-gray-400 mt-4">
+      Knowledge shouldn’t have gate keepers.
+    </h2>
+    <div class="mt-24 flex gap-7 items-center">
+      <div
+        class="flex items-center justify-center border-[0.065rem] border-solid border-[#9e9e9e] w-11 h-11 rounded-full animate-bounce"
+      >
         <svg
           width="21"
           height="24"
@@ -26,17 +30,25 @@
           />
         </svg>
       </div>
-      <p>Know more about me</p>
+      <p class="text-2xl">Know more about me</p>
     </div>
   </div>
   <div class="right-col">
-    <img src={knowledge} alt="knwoledge" />
+    <img
+      src={knowledge}
+      alt="knwoledge"
+      class="object-cover h-[37.5rem] rounded-md transition duration-300 hover:scale-105"
+    />
   </div>
 </div>
 <Timeline />
-<h2>Code</h2>
-<div class="footer">
-  <p>Other interests that have nothing to do with business:</p>
+<h2 class="flex items-center justify-center text-4xl font-normal mt-16">
+  Code
+</h2>
+<div class="flex flex-col gap-3 my-48 mx-0">
+  <p class="text-4xl font-normal w-[47rem]">
+    Other interests that have nothing to do with business:
+  </p>
   <ul>
     <li>I was a swimming champion and played it for over 15 years</li>
     <li>I was a fencer as well but played it much less than swimming</li>
@@ -49,31 +61,6 @@
 </div>
 
 <style>
-  .wrapper {
-    display: flex;
-    padding: 2.9375rem;
-    gap: 14.8125rem;
-  }
-  h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-top: 4.6875rem;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8125rem;
-    margin: 12.5rem 0;
-  }
-  .footer p {
-    font-size: 2.5rem;
-    font-weight: normal;
-    width: 750px;
-  }
-
   li {
     margin: 20px 0;
     font-size: 1.875rem;
@@ -81,54 +68,6 @@
   }
   ul {
     margin: 0 1.25rem;
-  }
-
-  .left-col h1,
-  .left-col h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
-  }
-  .left-col h2 {
-    color: #a9adc1;
-    margin-top: 1.125rem;
-  }
-
-  .scroll-down {
-    margin-top: 5.9375rem;
-    display: flex;
-    gap: 1.875rem;
-    align-items: center;
-  }
-  .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.0625rem solid #9e9e9e;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    animation: upDown 0.5s ease-in-out infinite alternate;
-  }
-  @keyframes upDown {
-    0% {
-      transform: translateY(-0.3125rem);
-    }
-    100% {
-      transform: translateY(0.3125rem);
-    }
-  }
-  .scroll-down p {
-    font-size: 1.375rem;
-  }
-
-  img {
-    object-fit: cover;
-    height: 37.5rem;
-    border-radius: 0.3125rem;
-    transition: 0.3s;
-    transform: scale(1);
-  }
-  img:hover {
-    transform: scale(1.05);
+    list-style-type: circle;
   }
 </style>

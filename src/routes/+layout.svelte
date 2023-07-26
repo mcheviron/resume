@@ -1,4 +1,6 @@
 <script>
+  import "../app.css";
+
   import Navbar from "$lib/components/Navbar.svelte";
   import { fly } from "svelte/transition";
   import { page } from "$app/stores";
