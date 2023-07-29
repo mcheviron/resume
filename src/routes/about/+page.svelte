@@ -1,18 +1,21 @@
 <script>
   import knowledge from "$lib/assets/about.jpg";
   import Timeline from "$lib/components/Timeline.svelte";
+  import typewriter from "$lib/typewriter";
 </script>
 
 <div class="flex p-12 lg:gap-60">
   <div class="lg:w-1/2">
-    <h1 class="md:text-4xl font-normal text-start">
-      Hi, I'm Mostafa Elataby-Cheviron, I'm a software engineer and a fullstack
-      developer. I love technology in all its forms and the general sciences. I
-      don’t care if it’s OS internals or UI/UX design.
-    </h1>
-    <h2 class="md:text-4xl font-normal text-gray-400 mt-4 text-start">
-      Knowledge shouldn’t have gate keepers.
-    </h2>
+    <div transition:typewriter={{ speed: 30 }}>
+      <h1 class="md:text-4xl font-normal text-start">
+        Hi, I'm Mostafa Elataby-Cheviron, I'm a software engineer and a
+        fullstack developer. I love technology in all its forms and the general
+        sciences. I don’t care if it’s OS internals or UI/UX design.
+      </h1>
+      <h2 class="md:text-4xl font-normal text-gray-400 mt-4 text-start">
+        Knowledge shouldn’t have gate keepers.
+      </h2>
+    </div>
     <div class="mt-24 flex gap-7 items-center">
       <div
         class="flex items-center justify-center border-[0.065rem] border-solid border-[#9e9e9e] w-11 h-11 rounded-full animate-bounce"
